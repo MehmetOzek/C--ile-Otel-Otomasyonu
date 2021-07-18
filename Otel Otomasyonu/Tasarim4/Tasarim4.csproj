@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A881683F-8454-4FC2-9FC1-D56388CE3416}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tasarim4</RootNamespace>
+    <AssemblyName>Tasarim4</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKullanici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKullanici.Designer.cs">
+      <DependentUpon>frmKullanici.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fromss\MusteriCikisiBireysel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fromss\MusteriCikisiBireysel.Designer.cs">
+      <DependentUpon>MusteriCikisiBireysel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fromss\MusteriCikisKurumsal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fromss\MusteriCikisKurumsal.Designer.cs">
+      <DependentUpon>MusteriCikisKurumsal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fromss\DepartmanClass.cs" />
+    <Compile Include="Fromss\DepartmanFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fromss\DepartmanFrm.Designer.cs">
+      <DependentUpon>DepartmanFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fromss\Marka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fromss\Marka.Designer.cs">
+      <DependentUpon>Marka.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fromss\MiniBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fromss\MiniBar.Designer.cs">
+      <DependentUpon>MiniBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fromss\MKategori.cs" />
+    <Compile Include="Fromss\Kategori.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fromss\Kategori.Designer.cs">
+      <DependentUpon>Kategori.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fromss\Bireysel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fromss\Bireysel.Designer.cs">
+      <DependentUpon>Bireysel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fromss\OdaKurumsal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fromss\OdaKurumsal.Designer.cs">
+      <DependentUpon>OdaKurumsal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fromss\Kurumsal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fromss\Kurumsal.Designer.cs">
+      <DependentUpon>Kurumsal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fromss\UrunEkleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fromss\UrunEkleme.Designer.cs">
+      <DependentUpon>UrunEkleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fromss\OdaBireysel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fromss\OdaBireysel.Designer.cs">
+      <DependentUpon>OdaBireysel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fromss\PersonelEkleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fromss\PersonelEkleme.Designer.cs">
+      <DependentUpon>PersonelEkleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fromss\PersonelEklemeClass.cs" />
+    <Compile Include="Fromss\PersonelListeleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fromss\PersonelListeleme.Designer.cs">
+      <DependentUpon>PersonelListeleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fromss\UrunListeleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fromss\UrunListeleme.Designer.cs">
+      <DependentUpon>UrunListeleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fromss\İcecek.cs" />
+    <Compile Include="KayıtOl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KayıtOl.Designer.cs">
+      <DependentUpon>KayıtOl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciClass.cs" />
+    <Compile Include="Fromss\PersonelVeritbnn.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="SifremiUnuttum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SifremiUnuttum.Designer.cs">
+      <DependentUpon>SifremiUnuttum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThemeColor.cs" />
+    <Compile Include="Veritabani.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKullanici.resx">
+      <DependentUpon>frmKullanici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fromss\MusteriCikisiBireysel.resx">
+      <DependentUpon>MusteriCikisiBireysel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fromss\MusteriCikisKurumsal.resx">
+      <DependentUpon>MusteriCikisKurumsal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fromss\DepartmanFrm.resx">
+      <DependentUpon>DepartmanFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fromss\Kategori.resx">
+      <DependentUpon>Kategori.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fromss\Bireysel.resx">
+      <DependentUpon>Bireysel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fromss\MiniBar.resx">
+      <DependentUpon>MiniBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fromss\OdaKurumsal.resx">
+      <DependentUpon>OdaKurumsal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fromss\Kurumsal.resx">
+      <DependentUpon>Kurumsal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fromss\Marka.resx">
+      <DependentUpon>Marka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fromss\UrunEkleme.resx">
+      <DependentUpon>UrunEkleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fromss\OdaBireysel.resx">
+      <DependentUpon>OdaBireysel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fromss\PersonelEkleme.resx">
+      <DependentUpon>PersonelEkleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fromss\PersonelListeleme.resx">
+      <DependentUpon>PersonelListeleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fromss\UrunListeleme.resx">
+      <DependentUpon>UrunListeleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KayıtOl.resx">
+      <DependentUpon>KayıtOl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SifremiUnuttum.resx">
+      <DependentUpon>SifremiUnuttum.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
